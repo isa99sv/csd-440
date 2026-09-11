@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <!--
+    Colton Stone, Assignment 7.2, September 11, 2026
+-->
+
+<head>
+
+    <title> Displayed Form </title>
+
+  </head>
+
+
+<form action='ColtonForm.php' method='post'>
+    <p>
+        <input type='hidden' name='hiddenInputs' value='Hidden Info' />
+    </p>
+    
+    <p>
+        <label> <h2>Please fill out all required fields</h2></label><br>
+        <label> Enter your first name:</label>
+        <input type="text" id="first_Name" name="first_Name" required><br><br>
+    </p>
+
+    <p>
+        <label>Enter your last name: </label>
+        <input type="text" id="last_Name" name="last_Name" required><br><br>
+    </p>
+
+      <p>
+        <label>Enter your age: </label>
+        <input type="number" id="age" name="age" min="21" max="65" required><br><br>
+    </p>
+
+        <p>
+            <label>Select your sex:<br></label>
+            <select name='sex' required>
+                <option value='' disabled selected></option>
+                <option value='male'>Male</option>
+                <option value='female'>Female</option>
+            </select><br><br>
+        </p>
+
+         <p>
+            <label>Input your phone number: (Ex: 123-456-7890)<br></label>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        </p>
+
+        <p>
+            <label>Enter a date:<br></label>
+            <input type="date" id="date" name="date" required><br><br>
+        </p>
+
+        <p>
+            <label>Choose your favorite color:<br></label>
+            <input type="color" id="fav_Color" name="fav_Color"><br><br>
+        </p>
+
+        
+        
+    <p>
+        <input type='submit' value='Submit' />
+      </p>
+
+    <p>
+        <input type='reset' value='Clear All Fields' />
+    </p>
+</form>
+
+</html>
